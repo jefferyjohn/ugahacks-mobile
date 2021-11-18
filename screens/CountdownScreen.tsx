@@ -1,15 +1,20 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
 import Countdown from 'react-native-countdown-component';
 
+import byte from '../assets/laptopbyte.png';
+
+
 export default function CountdownScreen() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Hacking begins in...</Text>
+
+  
       <Countdown
         until={7948000}
         onFinish={() => alert('Hacking begins!')}
@@ -21,6 +26,8 @@ export default function CountdownScreen() {
         timeLabelStyle={{color:'#FFF'}}
         showSeparator
       />
+      <Image source={byte} style={styles.logo} />
+
     </View>
   );
 }
@@ -39,5 +46,10 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     height: 1,
     width: '80%',
+  },
+  logo: {
+    width:228,
+    height: 200,
+    marginBottom: -40,
   },
 });

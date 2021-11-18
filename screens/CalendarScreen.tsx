@@ -1,11 +1,14 @@
 import * as React from 'react';
-import { StyleSheet, Button, Platform } from 'react-native';
+import { Image, StyleSheet, Button, Platform } from 'react-native';
 
 import * as Calendar from 'expo-calendar';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
+
+import calendar from '../assets/calendar.png';
+
 ``
 
 async function getDefaultCalendarSource() {
@@ -28,9 +31,8 @@ export default function CalendarScreen({ navigation }: RootTabScreenProps<'TabCa
   
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Calendar</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/CalendarScreen.tsx" />
+            <Image source={calendar} style={styles.logo} />
+
     </View>
   );
 }
@@ -49,5 +51,10 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     height: 1,
     width: '80%',
+  },
+  logo: {
+    width:410,
+    height: 700,
+    marginBottom: -40,
   },
 });

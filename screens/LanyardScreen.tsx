@@ -1,15 +1,15 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
+import { Image, StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
+import profile from '../assets/profile.png';
+
 export default function LanyardScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Lanyard</Text>
-      <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/screens/LanyardScreen.tsx" />
+      <Image source={profile} style={styles.logo} />
     </View>
   );
 }
@@ -28,5 +28,10 @@ const styles = StyleSheet.create({
     marginVertical: 30,
     height: 1,
     width: '80%',
+  },
+  logo: {
+    width:410,
+    height: 700,
+    marginBottom: -50,
   },
 });

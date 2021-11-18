@@ -15,7 +15,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "infoPlist": {
@@ -30,12 +32,13 @@
         "backgroundColor": "#ffffff"
       },
       "permissions": [
-          "READ_CALENDAR",
-          "WRITE_CALENDAR"
+        "READ_CALENDAR",
+        "WRITE_CALENDAR"
       ]
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
-    }
+    },
+    "description": ""
   }
 }

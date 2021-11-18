@@ -5,6 +5,8 @@ import { Platform, StyleSheet } from 'react-native';
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
+import calendar from '../assets/calendar.png';
+
 export default function ModalScreen() {
   return (
     <View style={styles.container}>
