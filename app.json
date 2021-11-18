@@ -29,10 +29,10 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "permissions": {
-        "READ_CALENDAR": "This app uses the calendar to display user's scheduled events on map.",
-        "WRITE_CALENDAR": "This app uses the calendar to record events that interest the user."
-      }
+      "permissions": [
+          "READ_CALENDAR",
+          "WRITE_CALENDAR"
+      ]
     },
     "web": {
       "favicon": "./assets/images/favicon.png"
