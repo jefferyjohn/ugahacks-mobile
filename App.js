@@ -17,4 +17,14 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  // cream: #f4e9cd,
+  // yellow: #ffe66d,
+  // brown: #b87d4b,
+  // green: #428a5a,
+  // sea: #77aca2, 
+  // blue: #004266, 
+  // black: #292929, 
+  // red: #dc4141, 
+  // white: F5F5F5
 });
